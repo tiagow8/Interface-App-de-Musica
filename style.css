@@ -1,0 +1,172 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: var(--font-primary);
+  background-color: var(--color__800);
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+.background {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+  position: relative;
+}
+
+.page-layout {
+  flex-basis: 450px;
+}
+
+.anual-plan {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.75rem;
+  font-weight: 900;
+  color: var(--color__200);
+  background-color: var(--color__950);
+  padding: 2rem;
+  border-radius: 11px;
+}
+
+.anual-plan__price {
+  font-weight: 500;
+  color: var(--color__700);
+  margin-top: 3px;
+}
+
+.annual-plan__content--left,
+.annual-plan__content--right {
+  display: flex;
+  align-items: center;
+}
+
+.annual-plan__content--left > div {
+  display: inline-block;
+  margin-left: 2.5rem;
+}
+
+@media (min-width: 500px) {
+  .annual-plan {
+    padding: 3rem;
+    font-size: 2rem;
+  }
+
+  .btn {
+    display: block;
+    font-size: 1.875rem;
+    font-weight: 900;
+    text-align: center;
+    text-decoration: none;
+    background-color: var(--color__400);
+    color: var(--color__999);
+    padding: 1.875rem;
+    border-radius: 11px;
+    /* box-shadow: var(--shadow--small), var(--shadow--large); */
+    box-shadow: var(--shadow--large);
+    transition: background-color var(--transition--out);
+  }
+
+  .btn:hover {
+    background-color: var(--color__500);
+    transition: background-color var(--transition--in);
+  }
+
+  .card {
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: var(--color__999);
+    /* box-shadow: var(--shadow--small), var(--shadow--large); */
+    box-shadow: var(--shadow--large);
+  }
+
+  .card > img {
+    display: block;
+    /* I'm sure there was shadow on this image originally?! */
+    /* box-shadow: var(--shadow--small); */
+    width: 100%;
+  }
+
+  .order-summary-layout {
+    font-size: 1.875rem;
+    padding: 4rem 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .order-summary-layout > div {
+    text-align: center;
+  }
+
+  .order-summary-layout h1 {
+    font-size: 2.75rem;
+    font-weight: 900;
+    color: var(--color__200);
+    margin: 0 0 2rem;
+  }
+  
+  .order-summary-layout p {
+    line-height: 25px;
+    margin: 0;
+    color: var(--color__700);
+  }
+ 
+  .order-summary-layout__money {
+    width: 100%;
+  }
+
+  .order-summary-layout__cancel-link {
+    font-weight: 900;
+    color: var(--color__700);
+    text-decoration: none;
+    transition: var(--transition--out);
+  }
+  
+  .order-summary-layout__cancel-link:hover {
+    color: var(--color__200);
+    transition: var(--transition--in);
+  }
+
+  @media (min-width: 500px) {
+    .order-summary-layout {
+      font-size: 2rem;
+      padding: 6rem;
+      gap: 32px;
+    }
+  
+    .order-summary-layout h1 {
+      font-size: 3.5rem;
+    }
+
+    @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root {
+  font-size: 8px;
+  --font-primary: 'Red Hat Display', sans-serif;
+  --color__000: rgba(0, 0, 0, 1);
+  --color__100: rgba(35, 31, 32, 1);
+  --color__200: rgba(31, 46, 85, 1);
+  --color__300: rgba(30, 31, 205, 1);
+  --color__400: rgba(56, 42, 225, 1);
+  --color__500: rgba(118, 108, 241, 1);
+  --color__600: rgba(105, 141, 255, 1);
+  --color__700: rgba(113, 127, 166, 1);
+  --color__800: rgba(214, 225, 255, 1);
+  --color__900: rgba(224, 232, 255, 1);
+  --color__950: rgba(247, 249, 255, 1);
+  --color__999: rgba(255, 255, 255, 1);
+  --shadow--small: 0 0.5rem 0.5rem RGBA(0, 0, 0, 0.25);
+  --shadow--large: 0 2.5rem 2.5rem rgba(118, 108, 241, 0.18);
+  --transition--out: 0.2s ease-in;
+  --transition--in: 0.3s ease-out;
+}
+
+}
